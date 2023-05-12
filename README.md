@@ -14,5 +14,5 @@ https://colab.research.google.com/drive/1eWAliXqz70VBQ2NAlZHc8KBsruVawH70#scroll
 3. GitHub, Main code:
 https://github.com/CorbenYkt/imageclassification
 
-4 GitHub, Telegram-Bot:
+4. GitHub, Telegram-Bot:
 https://github.com/WNick-main/Recognizer/
