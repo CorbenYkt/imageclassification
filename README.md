@@ -6,7 +6,7 @@ Team3: Artemyev Dmitriy, Makhalin Nikolay, Romanova Evgeniya, Tyugay Nikolay
 
 
 As dataset we use public one https://www.kaggle.com/datasets/puneet6060/intel-image-classification. This is image data of Natural Scenes around the world. Dataset contains around 25k images of size 150x150 pixels distributed under 6 categories - buildings, forest, glacier, mountain, sea, street. There are around 14k images in Train, 3k in Test and 7k in Prediction. It took not so much time to delete mismatched images in classes - it is when we can see mountains in sea image class etc.
-
+You can download this dataset, add it to your GDrive folder and use Google Colab code below.
 
 URLs:
 1. Google Docs, CourseWork - AmirBahrami:
