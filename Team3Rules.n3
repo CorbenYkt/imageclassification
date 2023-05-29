@@ -1,0 +1,51 @@
+@prefix ind:<URN:inds:>.
+@prefix prop:<URN:prop:>.
+@prefix classes:<URN:class>.
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+classes:process a owl:Class.
+
+classes:KPI a owl:Class.
+
+classes:Settings a owl:Class.
+
+classes:inputs a owl:Class.
+
+classes:resources a owl:Class.
+
+classes:output a owl:Class.
+
+prop:hasKPI a owl:ObjectProperty;
+    a owl:AsymmetricProperty.
+
+prop:hasInput a owl:ObjectProperty;
+    a owl:AsymmetricProperty.
+
+prop:hasResource a owl:ObjectProperty;
+    a owl:AsymmetricProperty.
+
+prop:hasOutput a owl:ObjectProperty;
+    a owl:AsymmetricProperty.
+
+ind:process a owl:Class; 
+    owl:oneof ind:process0, ind:process01, ind:process02, ind:process03, ind:process04, ind:process05, ind:process06.
+
+ind:Settings a owl:Class;
+    owl:oneof ind:layers, ind:padding_modes, ind:filters_range, ind:dropout_range, ind:learning_rate, ind:optimizer_modes, ind:accuracy, ind:val_accuracy.
+
+ind:allInputs a owl:Class;
+    owl:oneof ind:kaggledataset, ind:messagewithimage.
+
+ind:AllKPIs a owl:Class;
+    owl:oneof ind:accuracyscore, ind:mlalgorithm.
+
+ind:AllResourceses a owl:Class;
+    owl:oneof ind:pythonlibraries, ind:messagewithimage, ind:team3, ind:cnnlogic, ind:telegram.
+
+ind:results a owl:Class;
+    owl:oneof ind:text.
+
+ind:disjointClasses a owl:AllDisjointClasses;
+    owl:members ind:processes, ind:allInputs, ind:AllKPIs, ind:AllResourceses, ind:results.
